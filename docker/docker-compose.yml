@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: frontend:latest
+    container_name: frontend
+    volumes:
+      - ./:/usr/frontend
+    ports:
+      - "32148:32148"
+    restart: always
+    stdin_open: true
+    logging:
+      driver: none

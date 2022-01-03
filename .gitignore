@@ -1,0 +1,10 @@
+.env.prod
+
+node_modules/
+
+dist
+
+cert.crt
+cert.key
+
+.vscode/*
