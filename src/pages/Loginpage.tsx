@@ -8,6 +8,7 @@ const LoginPage = (): JSX.Element => {
 	const [user, setUser] = useState<User>();
 	const [cookies, setCookie] = useCookies();
 	const setNavigate = useNavigate();
+	const url = "http://localhost:3000/user/login";
 
 	return (
 		<Fragment>
@@ -22,10 +23,11 @@ const LoginPage = (): JSX.Element => {
 								user,
 								setNavigate,
 								setCookie,
+								url,
 							});
 						}}
 					>
-						<label>Registrate</label>
+						<label>Iniciar sesion</label>
 						<input
 							type="email"
 							name="email"
